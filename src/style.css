@@ -1,8 +1,71 @@
+a {
+  color: darkblue;
+}
 body {
-  background: lightcyan;
+  background-color: #a0caef;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-h1,
+h1 {
+  font-size: 800;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
+  color: #101021;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
 footer {
   text-align: center;
+}
+
+form {
+  padding: 30px;
+  background-color: #ddedf0;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 60px;
+}
+
+.instructions {
+  padding: 14px;
+  border: 1px grey solid;
+  width: 80%;
+  border-radius: 10px;
+  line-height: 20px;
+  color: #101021;
+}
+
+.button {
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: #a0caef;
+  color: #101021;
+  font-size: 16px;
+}
+
+.book {
+  font-size: 14px;
+  background-color: #ddedf0;
+  padding: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  border-left: 3px solid darkblue;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+footer {
+  margin: 30px;
+  font-size: 11px;
 }
