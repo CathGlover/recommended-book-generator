@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Recommended Reading Generator</title>
   </head>
   <body>
@@ -13,7 +15,7 @@
         <h1>AI Recommended Reading Generator</h1>
       </header>
       <main>
-        <form autocomplete="off">
+        <form autocomplete="off" id="book-form">
           <input
             type="text"
             autofocus
@@ -23,11 +25,7 @@
           />
           <input type="submit" class="button" />
         </form>
-        <div class="book">
-          The book recommendations will go here.
-          <br />
-          The book recommendations will go here.
-        </div>
+        <div class="book"></div>
       </main>
       <footer>
         This AI project was coded by Catherine Glover and is open-sourced on
