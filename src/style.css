@@ -69,3 +69,8 @@ footer {
   margin: 30px;
   font-size: 11px;
 }
+
+.book h2,
+b {
+  color: navy;
+}
