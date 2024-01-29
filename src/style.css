@@ -28,12 +28,7 @@ footer {
 }
 
 form {
-  padding: 30px;
-  background-color: #ddedf0;
-  border-radius: 10px;
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-bottom: 60px;
 }
 
 .instructions {
@@ -54,7 +49,7 @@ form {
   font-size: 16px;
 }
 
-.book {
+#book {
   font-size: 14px;
   background-color: #ddedf0;
   padding: 20px;
@@ -70,7 +65,40 @@ footer {
   font-size: 11px;
 }
 
-.book h2,
+.form-wrapper {
+  padding: 20px 15px;
+  background-color: #ddedf0;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#book h2,
 b {
   color: navy;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

@@ -15,18 +15,23 @@
         <h1>AI Recommended Reading Generator</h1>
       </header>
       <main>
-        <form autocomplete="off" id="book-form">
-          <input
-            type="text"
-            autofocus
-            required
-            placeholder="Enter your favourite genre"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="button" />
-        </form>
-        <div class="book"></div>
+        <div class="form-wrapper">
+          <form autocomplete="off" id="book-form">
+            <input
+              type="text"
+              autofocus
+              required
+              placeholder="Enter a genre to see your book recommendation. 📚"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <div class="hint">
+            <small>e.g. horror 🧟, romance ❤️, sci-fi 👽</small>
+          </div>
+        </div>
+        <div id="book" class="hidden"></div>
       </main>
       <footer>
         This AI project was coded by Catherine Glover and is open-sourced on
